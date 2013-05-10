@@ -6,10 +6,13 @@ angular.module('AppService', ['ngResource'])
           action:'search.json'
         , q:'soudev'        
         , 'callback': 'JSON_CALLBACK'
-        }, {
+        }
+        /*
+        , {
           'get': {
               'method': 'JSONP'
           }
+        */
         }
       );
 
