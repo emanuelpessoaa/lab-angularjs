@@ -1,4 +1,3 @@
-/*
 angular.module('AppService', ['ngResource'])
   .factory('TwitterResource', function($resource) {
       var twitter = $resource(
@@ -12,19 +11,6 @@ angular.module('AppService', ['ngResource'])
               'method': 'JSONP'
           }
         }
-      );
-
-      return twitter;
-  });
-  */
-
-  angular.module('AppService', ['ngResource'])
-  .factory('TwitterResource', function($resource) {
-      var twitter = $resource(
-        'https://search.twitter.com/:action',
-        {
-          action:'search.json'
-        , 'q':'soudev'
       );
 
       return twitter;
