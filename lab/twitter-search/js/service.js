@@ -24,7 +24,7 @@ angular.module('AppService', ['ngResource'])
         'https://search.twitter.com/:action',
         {
           action:'search.json'
-        , q:'soudev'
+        , 'q':'soudev'
       );
 
       return twitter;
